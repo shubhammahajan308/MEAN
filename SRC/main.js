@@ -1,21 +1,18 @@
-const person = require("./person");
+const b = require("bluebird")
+const ex = require("express")
+const obj = ex();
+//const obj1 = require("cors");
 
-let emp1 = require('./person.js')
+const data = require("./data");
 
-let emp2 = require('./employee.js')
-class Main {
-    static main() {
-        console.log("this is the entry point")
 
-        let p = new emp1();
-        let output = p.getName();
-
-        let e = new emp2();
-        let hello = e.hello();
-
-        console.log(output);
-        console.log(hello);
-
+obj.get("/enter", async (req, res) => {
+    try {
+        const place = req.query;
+        await data.insertVal(place);
+        res.json({ msg: "Success" });
+    } catch (err) {
+        res.json({ msg: "failure" })
     }
-}
-Main.main();
+})
+obj.listen(4100);
