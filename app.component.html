@@ -1,0 +1,5 @@
+<input type="text" name="" id="" [formControl]="inputTask" />
+<input type="button" value="Add Task" (click)="addTask()" />
+<div>
+    <div *ngFor="let item of taskList">{{item}}</div>
+</div>
