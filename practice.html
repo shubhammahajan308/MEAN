@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+    <title>Ajax</title>
+    <style>
+        .body,
+        html {
+            background: rgba(243, 214, 214, 0.8);
+        }
+
+        .container-fluid {
+            font-family: 'Dancing Script', cursive;
+            background: linear-gradient(to bottom, rgba(228, 118, 136, 0.5), rgba(34, 7, 7, 0.5));
+            /* background-repeat: no-repeat; */
+            font-size: 20px;
+        }
+
+        a {
+            color: white;
+        }
+
+        a:hover {
+            color: white;
+        }
+    </style>
+    <script src="practice.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row text-light align-items-center" style="height:60px;font-size:24px; background:rgba(0,0,0,.5)">
+            <div class="col-4 col-md-9"><a href="#"> Logo</a></div>
+            <div class="col-2 col-md-1"><a href="#"> Home</a></div>
+            <div class="col-3 col-md-1"><a href="#"> Profile</a></div>
+            <div class="col-1 col-md-1"><a href="#"> About</a></div>
+
+        </div>
+        <div class="row m-1 p-1 align-items-center">
+            <div class="col-6 col-md-2 ">User details:</div>
+            <div class="col-6 col-md-2 p-0">
+                <button class="btn btn-danger" onclick="getNames();">
+                    Show names
+                </button></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <div class="col-1">
+                        ID
+                    </div>
+                    <div class="col-3 col-md-2">
+                        UserName
+                    </div>
+                    <div class="col-3 col-md-2">
+                        Password
+                    </div>
+                </div>
+                <hr style="height: 1px; background: white; width:60%; margin-left:-6px;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col" id="parentBlock">
+                <div class="row" style="display: none;">
+                    <div class="col-1">
+                        id
+                    </div>
+                    <div class="col-3 col-md-2">
+                        username
+                    </div>
+                    <div class="col-3 col-md-2">
+                        password
+                    </div>
+                    <hr style="height: 1px; background: white;">
+                </div>
+
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>
+
+<!-- 82ac77a4309c7e048fc27205cd23410f
+ -->
+
+<!-- https://api.openweathermap.org/data/2.5/weather?q=mumbai&appid=82ac77a4309c7e048fc27205cd23410f&unit=metric -->
