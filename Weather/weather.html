@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="weather.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row justify-content-center align-items-center" style="height: 90px;background: rgb(21, 124, 165);">
+            <div class="col-md-6 d-flex justify-content-center">
+                <input id="input" type="text" placeholder="City name"
+                    style="margin-right: 2px;border: green solid 2px; padding: 5px;border-radius: 50px;">
+            </div>
+            <div class="col-md-6 d-flex justify-content-center">
+                <button type="button" class="btn btn-success" onclick="showdata()">Search</button>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6" style="height: 220px; border: 1px green solid;border-radius: 5px;">
+                <div class="row">
+                    <div class="col-6 d-flex mt-2" style="font-weight: bold;font-size:x-large;">
+                        City: <p id="city">__</p>
+                    </div>
+                    <div class="col-6 d-flex mt-2" style="font-weight: bold;font-size:x-large;">
+                        Country: <p id="country">__</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 d-flex mt-2" style="font-weight: bold;font-size:x-large;">
+                        Max Temp: <p id="maxTemp">__</p>°C
+                    </div>
+                    <div class="col-6 d-flex mt-2" style="font-weight: bold;font-size:x-large;">
+                        Min Temp: <p id="minTemp">__</p>°C
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 d-flex mt-2" style="font-weight: bold;font-size:x-large;">
+                        Feels Like: <p id="feelLike">__</p>°C
+                    </div>
+                    <div class="col-6 d-flex mt-2" style="font-weight: bold;font-size:x-large;">
+                        Weather: <p id="weather">__</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
